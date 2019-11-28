@@ -13,7 +13,7 @@
                             <a href="/clip-in-hair-extensions/beach-waves-express.html">
                                 <h3>Beach Wave Double Hair Set</h3>
                             </a>
-                            <ul>
+                            <ul id="shopBeachWaveDoubleHair-ul">
                                 <small>
                                     <li>Pre-Waved sets</li>
                                     <li>100% Remy Hair</li>
@@ -51,7 +51,7 @@
                                 </small>
                             </ul>
                             <a href="/clip-in-hair-extensions/double-hair-set.html" title='Double Hair Set'
-                                class="lan-btn">Shop Double Hair</a>
+                                class="lan-btn" id="shopDblHair">Shop Double Hair</a>
                             <div id="clear" style="clear:both;"></div>
                         </div>
                     </div>
@@ -82,6 +82,34 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- <div class="col-xs-12 col-sm-6  col-md-3">
+                    <div class="panel">
+                        <a href="">
+                            <img src="{{media url="wysiwyg/clip-in-2019/placeholder-image.jpg"}}"
+                                alt='Double Hair Set Weft - Half Weft' title='Double Hair Set Weft - Half Weft' />
+                        </a>
+                        <div class="descript-txt">
+                            <a href="">
+                                <h3>Double Hair Set Weft - Half Weft</h3>
+                            </a>
+                            <ul id="dblHairWeft-ul">
+                                <small>
+                                    <li>100% Remy Hair</li>
+                                    <li>Individual DHS weft</li>
+                                    <li>50g - 60g</li>
+                                    <li>Lengths 18” - 22”</li>
+                                    <br>
+                                </small>
+                            </ul>
+                            <a href="" title='Double Hair Set Weft - Half Weft' class="lan-btn"
+                                id="dblHairWeft-link">Shop
+                                Double Hair Set Weft<br> - Half Weft
+                            </a>
+                            <div id="clear" style="clear:both;"></div>
+                        </div>
+                    </div>
+                </div> -->
 
                 <div class="col-xs-12 col-sm-6  col-md-3">
                     <div class="panel">
@@ -131,7 +159,7 @@
         background-color: black;
         border: none;
         color: white !important;
-        padding: 10px 32px;
+        padding: 12px 32px;
         text-align: center;
         text-decoration: none !important;
         display: inline-block;
@@ -141,7 +169,15 @@
     }
 
     #shopBeachWaveDoubleHair {
-        padding: 10px 20px;
+        padding: 12px 20px;
+    }
+
+    #dblHairWeft-ul {
+        margin-bottom: 2rem;
+    }
+
+    #dblHairWeft-link {
+        padding: 5.5px 15px;
     }
 
     ul {
@@ -160,10 +196,39 @@
         border: 1px solid #fcfcfc;
     }
 
+    @media only screen and (max-width: 1024px) {
+        #dblHairWeft-ul {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #shopBeachWaveDoubleHair-ul {
+            margin-bottom: 1rem;
+        }
+
+        #shopDblHair {
+            padding: 21px 32px;
+        }
+    }
 
     @media only screen and (max-width: 480px) {
         .descript-txt p {
             min-height: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        #shopDblHair {
+            padding: 12px 32px;
+        }
+
+        #shopBeachWaveDoubleHair-ul {
+            margin-bottom: 2.625rem
+        }
+
+        #dblHairWeft-link {
+            padding: 12px 32px;
         }
     }
 
