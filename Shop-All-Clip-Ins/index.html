@@ -8,7 +8,8 @@
             src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Deluxe-Clip-In-Collection-mob.jpg"}}"
             alt="Want fuller, thicker hair?" title="Want fuller, thicker hair?" />
         <div class="col-md-6 hidden-xs">
-            <img src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Deluxe-Clip-In-Collection.jpg"}}"
+            <img class="dktp-row-img"
+                src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Deluxe-Clip-In-Collection.jpg"}}"
                 alt="Deluxe Clip-Ins" title="Deluxe Clip-Ins" />
         </div>
         <div class="col-md-6 col-xs-12 product-description">
@@ -32,7 +33,8 @@
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Double-Hair-Set-mob.jpg"}}"
             alt="The Shine Is Real" title="The Shine Is Real" />
         <div class="col-md-6 hidden-xs">
-            <img src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Double-Hair-Set-Collection.jpg"}}"
+            <img class="dktp-row-img"
+                src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Double-Hair-Set-Collection.jpg"}}"
                 alt="Double Hair Set Collection" title="Double Hair Set Collection" />
         </div>
         <div class="col-md-6 col-xs-12 product-description">
@@ -56,7 +58,7 @@
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Beach-Wave-mob.jpg"}}"
             alt="The Ultimate Beach Wave" title="The Ultimate Beach Wave" />
         <div class="col-md-6 hidden-xs">
-            <img src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Beach-Wave-Collection.jpg"}}"
+            <img class="dktp-row-img" src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Beach-Wave-Collection.jpg"}}"
                 alt="Beach Wave Collection" title="Beach Wave Collection" />
         </div>
         <div class="col-md-6 col-xs-12 product-description">
@@ -80,7 +82,8 @@
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Double-Hair-Weft-mob.jpg"}}"
             alt="Enhance Natrual Lengths" title="Enhance Natrual Lengths" />
         <div class="col-md-6 hidden-xs">
-            <img src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Double-Hair-Weft-Collection.jpg"}}"
+            <img class="dktp-row-img"
+                src="{{media url="wysiwyg/clip-in-2019/Beauty-Works-Double-Hair-Weft-Collection.jpg"}}"
                 alt="Double Hair Set Weft Collection" title="Double Hair Set Weft Collection" />
         </div>
         <div class="col-md-6 col-xs-12 product-description">
@@ -103,7 +106,7 @@
         <h1 class="hidden-xs">Not sure how to put<br> in clip-in hair<br> extensions?</h1>
         <h1 style="font-size: 22px;" class="h1-Alt visible-xs-block">Not sure how to put in clip-in hair extensions?
         </h1>
-        <p>
+        <p id="howToText">
             Silky Soft hair is not confined to the catwalk or redcarpet. Discover the go-to's for influencers and
             celebrities alike. Add in our Award winning set's in the comfort of your own home, simply clip-in and
             clip-out, whenever the fancy takes you. Our 100% Remy human hair extensions accessorise your look and give
@@ -112,10 +115,18 @@
             Watch our how to:
         </p>
     </div>
-    <div style="--aspect-ratio: 16/9;">
-        <iframe width="1600" height="900" src="https://www.youtube.com/embed/0N0eWFyO1uo" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+    <div class="row">
+        <div class="argento-grid">
+            <div class="col-xs-12">
+                <div class="panelvideo">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe src="https://www.youtube.com/embed/0N0eWFyO1uo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -148,7 +159,7 @@
         font-weight: 400;
     }
 
-    p {
+    #howToText {
         font-weight: 300;
         font-size: 20px;
         letter-spacing: 1px;
@@ -165,7 +176,7 @@
     }
 
     .product-description {
-        padding: 30px;
+        padding: 15px;
     }
 
     .product-description h1 {
@@ -197,41 +208,16 @@
         background-color: white;
     }
 
+    .dktp-row-img {
+        vertical-align: bottom;
+    }
+
     #shineIsReal {
         max-width: 75%;
     }
 
     #enhanceNatrualLengths {
         max-width: 90%;
-    }
-
-    /* VIDEO */
-
-    [style*="--aspect-ratio"]> :first-child {
-        width: 100%;
-    }
-
-    [style*="--aspect-ratio"]>img {
-        height: auto;
-    }
-
-    @supports (--custom:property) {
-        [style*="--aspect-ratio"] {
-            position: relative;
-        }
-
-        [style*="--aspect-ratio"]::before {
-            content: "";
-            display: block;
-            padding-bottom: calc(100% / (var(--aspect-ratio)));
-        }
-
-        [style*="--aspect-ratio"]> :first-child {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-        }
     }
 
     @media only screen and (max-width: 1024px) {
@@ -244,7 +230,7 @@
             margin-bottom: 30px;
         }
 
-        p {
+        #howToText {
             font-size: 17px;
             letter-spacing: 0px;
         }
@@ -277,7 +263,7 @@
 
     @media only screen and (max-width: 768px) {
 
-        p {
+        #howToText {
             padding: 0px;
         }
 
@@ -335,7 +321,7 @@
             font-size: 1.8rem;
         }
 
-        p {
+        #howToText {
             letter-spacing: 1px;
             line-height: 25px;
         }
@@ -387,7 +373,7 @@
             font-size: 1.4rem;
         }
 
-        p {
+        #howToText {
             font-size: 15px;
         }
 
