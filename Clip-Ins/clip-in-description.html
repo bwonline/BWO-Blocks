@@ -1,0 +1,65 @@
+<div class="hidden-xs">
+    Clip-in hair extensions give you the most versatile transformation of all of the hair extension types, creating
+    glamorous results in minutes. Whether you have short or long hair, you can easily transform your look, making your
+    hair appear longer, thicker or more voluminous. Made from 100% real Remy human hair, these clip-ins can be washed
+    and are easy to style. Offering sets to suit different hair types, Beauty Works offer both 140g Deluxe Clip In's for
+    a natural finish or our Double Hair Sets for fuller, thicker sets. Beauty Works Award winning clip-ins are easy to
+    attach yourself at home, have an incredibly natural appearance and blend perfectly into your hair. Available from
+    16”, 18’, 20’ and 22” lengths in a selection of the most sought after shades. Select from the density and length to
+    suit your hair type.
+</div>
+
+<div class="visible-xs-block" style="text-align: center;">
+    <input type="checkbox" class="read-more-state" id="post-1" />
+
+    <p class="read-more-wrap">Clip-in hair extensions give you the most versatile transformation of all of the hair
+        extension types, creating glamorous results in minutes.<span class="read-more-target"> Whether you have short or
+            long hair, you can easily transform your look, making your hair appear longer, thicker or more voluminous.
+            Made from 100% real Remy human hair, these clip-ins can be washed and are easy to style. Offering sets to
+            suit different hair types, Beauty Works offer both 140g Deluxe Clip In's for a natural finish or our Double
+            Hair Sets for fuller, thicker sets. Beauty Works Award winning clip-ins are easy to attach yourself at home,
+            have an incredibly natural appearance and blend perfectly into your hair. Available from 16”, 18’, 20’ and
+            22” lengths in a selection of the most sought after shades. Select from the density and length to suit your
+            hair type.
+        </span></p>
+
+    <label for="post-1" class="read-more-trigger"></label>
+</div>
+
+<style>
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+    }
+
+    .read-more-state~.read-more-trigger:before {
+        content: 'Read more';
+    }
+
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Read less';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+</style>
