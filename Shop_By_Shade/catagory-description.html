@@ -1,0 +1,59 @@
+<div class="hidden-xs">
+    Unsure on your exact shade? You can select from our beautiful bespoke blends of hair extensions only available at
+    Beauty Works. Choose from over 40 beautiful shades, from alluring dark tones to distinctive reds and cool, clean
+    blondes to metallic slivers and ash blends. Our hand coloured balayage and colour melt hair extensions fuse together
+    multiple tones with a seamless transition from root to tip. Create depth and dimension to your own hair with our
+    hand painted highlighted colours, featuring multiple tones for the most realistic hair extension blend.
+</div>
+
+<div class="visible-xs-block" style="text-align: center;">
+    <input type="checkbox" class="read-more-state" id="post-1" />
+
+    <p class="read-more-wrap">Unsure on your exact shade? You can select from our beautiful bespoke blends of hair
+        extensions only available at Beauty Works. <span class="read-more-target"> Choose from over 40 beautiful shades,
+            from alluring dark tones to distinctive reds and cool, clean blondes to metallic slivers and ash blends. Our
+            hand coloured balayage and colour melt hair extensions fuse together multiple tones with a seamless
+            transition from root to tip. Create depth and dimension to your own hair with our hand painted highlighted
+            colours, featuring multiple tones for the most realistic hair extension blend.
+        </span></p>
+
+    <label for="post-1" class="read-more-trigger"></label>
+</div>
+
+<style>
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+    }
+
+    .read-more-state~.read-more-trigger:before {
+        content: 'Read more';
+    }
+
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Read less';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+</style>
