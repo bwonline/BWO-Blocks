@@ -1,0 +1,65 @@
+<div class="hidden-xs">
+    Beauty Works offer a unique range of salon quality weft-in hair extensions. Select from a variation of over 40
+    stunning colours in a variation of densities to suit medium, thick or long hair. With our signature designs that
+    lead the market, Beauty Works offer only the best in quality and style, with Double Drawn and Double wefted hair
+    extensions using 100% Cuticle retained Remy hair. Weft extensions are a salon favourite application method, with no
+    glue, no heat and no damage. Beauty Works salons are certified to attach hair extensions using clever application
+    techniques, ensuring each client is offered a consultation to determine their perfect colour match and blend.
+    Lasting 4 to 6 weeks before re-application is needed, Micro Ring Weft or Braided Weft Hair Extension applications
+    are a great form of semi permanent hair extensions, adding volume, length and colour as a shorter term solution.
+</div>
+
+<div class="visible-xs-block" style="text-align: center;">
+    <input type="checkbox" class="read-more-state" id="post-1" />
+
+    <p class="read-more-wrap">Beauty Works offer a unique range of salon quality weft-in hair extensions. Select from a
+        variation of over 40 stunning colours in a variation of densities to suit medium, thick or long hair.<span
+            class="read-more-target"> With our signature designs that lead the market, Beauty Works offer only
+            the best in quality and style, with Double Drawn and Double wefted hair extensions using 100% Cuticle
+            retained Remy hair. Weft extensions are a salon favourite application method, with no glue, no heat and no
+            damage. Beauty Works salons are certified to attach hair extensions using clever application techniques,
+            ensuring each client is offered a consultation to determine their perfect colour match and blend. Lasting 4
+            to 6 weeks before re-application is needed, Micro Ring Weft or Braided Weft Hair Extension applications are
+            a great form of semi permanent hair extensions, adding volume, length and colour as a shorter term solution.
+        </span></p>
+
+    <label for="post-1" class="read-more-trigger"></label>
+</div>
+
+<style>
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked~.read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+    }
+
+    .read-more-state~.read-more-trigger:before {
+        content: 'Read more';
+    }
+
+    .read-more-state:checked~.read-more-trigger:before {
+        content: 'Read less';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+</style>
