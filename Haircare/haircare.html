@@ -1,19 +1,15 @@
-<div class="container" style="display: grid;">
-
+<div class="container" style="display: flow-root">
     <div class="row">
-        <div class="col">
-            <img class="hidden-xs"
-                src="{{media url="wysiwyg/haircare/Beauty_Works_Luxury_Hair_Extensions_Haircare_Plain_1.jpg"}}"
-                alt="15% off Self Care For Your Hair - Keep your hair looking healthier for longer with the Beauty Works haircare range - Take 15% off"
-                title="15% off Self Care For Your Hair" />
-
-            <img class="hidden-sm hidden-md hidden-lg"
-                src="{{media url="wysiwyg/haircare/Beauty_Works_Luxury_Hair_Extensions_Haircare_Aftercare_Mobile.jpg"}}"
-                alt="15% off Self Care For Your Hair - Keep your hair looking healthier for longer with the Beauty Works haircare range - Take 15% off"
-                title="15% off Self Care For Your Hair" />
+        <div class="col-xs-12 hidden-xs">
+            {{widget type="Swissup\EasySlide\Block\Slider" identifier="haircareBanner"}}
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+            {{widget type="Swissup\EasySlide\Block\Slider" identifier="haircareBannerMobile"}}
         </div>
     </div>
+</div>
 
+<div class="container" style="display: grid;">
     <div class="row a-center">
 
         <div class="col-md-3 col-xs-6">
