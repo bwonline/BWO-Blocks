@@ -254,50 +254,44 @@
 
     <div class="row">
         <div class="col-md-4 col-xs-6">
-            <a href="">
+            <a href="/haircare/shop-by-concern/blonde-hair.html">
                 <div class="concern">
-                    Blonde Hair
-                    <p><small>Shop Now</small></p>
+                    <p class="concernText">Blonde Hair<br><small>Shop Now</small></p>
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-xs-6">
-            <a href="">
+            <a href="/haircare/shop-by-concern/colour-treated-hair.html">
                 <div class="concern">
-                    Colour Treated Hair
-                    <p><small>Shop Now</small></p>
+                    <p class="concernText">Colour Treated Hair<br><small>Shop Now</small></p>
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-xs-6">
-            <a href="">
+            <a href="/haircare/shop-by-concern/dry-damaged-hair.html">
                 <div class="concern">
-                    Dry Damaged Hair
-                    <p><small>Shop Now</small></p>
+                    <p class="concernText">Dry Damaged Hair<br><small>Shop Now</small></p>
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-xs-6">
-            <a href="">
+            <a href="/haircare/shop-by-concern/greasy-oily-hair.html">
                 <div class="concern">
-                    Greasy Oily Hair
-                    <p><small>Shop Now</small></p>
+                    <p class="concernText">Greasy Oily Hair<br><small>Shop Now</small></p>
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-xs-6">
-            <a href="">
+            <a href="/haircare/shop-by-concern/frizzy-hair.html">
                 <div class="concern">
-                    Frizzy Hair
-                    <p><small>Shop Now</small></p>
+                    <p class="concernText">Frizzy Hair<br><small>Shop Now</small></p>
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-xs-6">
-            <a href="">
+            <a href="/haircare/shop-by-concern/sun-exposed-hair.html">
                 <div class="concern">
-                    Sun-exposed Hair
-                    <p><small>Shop Now</small></p>
+                    <p class="concernText">Sun-exposed Hair<br><small>Shop Now</small></p>
                 </div>
             </a>
         </div>
@@ -396,10 +390,29 @@
         background-size: cover;
         height: 30rem;
         margin: .5rem;
+        position: relative;
     }
 
     .concern:hover {
         background-image: url('/media/wysiwyg/haircare/SHAMPOO.jpg');
+    }
+
+    .concernText {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        color: #454545;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .concernText small {
+        font-weight: 400;
+    }
+
+    .concern:hover .concernText {
+        color: white;
     }
 
     @media only screen and (max-width: 1024px) {
