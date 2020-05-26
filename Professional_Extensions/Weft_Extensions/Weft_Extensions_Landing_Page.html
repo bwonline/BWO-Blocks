@@ -10,18 +10,19 @@
 </div>
 
 <!-- ABOUT THE HAIR -->
-<div class="container">
+<div class="container aboutBackground">
     <div class="row">
-        <div class="col">
-            <img class="desktopImg" style="width: 100%;"
-                src="{{media url="wysiwyg/microRing2020/About_Beauty_Works_Celebrity_Choice_Hair2.png"}}"
-                alt="All Beauty Works Celebrity Choice is crafted from 100% Remy human hair, that’s ethically sourced from our raw material partners, Celebrity Choice hair is soft to touch and strands all remain Remy cuticle-intact to retain moisture and shine throughout its lifespan."
-                title="About The Hair" />
-            <img class="mobileImg" style="width: 100%;"
-                src="{{media url="wysiwyg/microRing2020/About_Beauty_Works_Celebrity_Choice_Hair_mobile2.png"}}"
-                alt="All Beauty Works Celebrity Choice is crafted from 100% Remy human hair, that’s ethically sourced from our raw material partners, Celebrity Choice hair is soft to touch and strands all remain Remy cuticle-intact to retain moisture and shine throughout its lifespan."
-                title="About The Hair" />
+        <div class="col-md-5"></div>
+        <div class="col-md-6 col-xs-12">
+            <div class="aboutText">
+                <p>
+                    Made with 100% hand selected healthy human hair, strands all remain Remy cuticle-intact to retain
+                    moisture and shine throughout its lifespan. Virgin Hair is ethically collected around the world by
+                    our partners that have over 25 years of sourcing the softest human hair extensions.
+                </p>
+            </div>
         </div>
+        <div class="col-md-1"></div>
     </div>
 </div>
 
@@ -269,6 +270,111 @@
         .weftDescriptionText {
             font-size: 1.3rem;
             margin: 1rem;
+        }
+    }
+</style>
+
+<!-- ABOUT THE HAIR -->
+<style>
+    .aboutBackground {
+        background: #FFFFFF url('/media/wysiwyg/Professional_Extension_Landing_Pages/Beauty_Works_Professional_Extensions_About_The_Hair.png') no-repeat center;
+        background-size: 100%;
+        height: 27rem;
+        display: inline-block;
+    }
+
+    .aboutText {
+        padding-top: 7rem;
+    }
+
+    .aboutText p {
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        letter-spacing: .5px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .aboutBackground {
+            height: 22rem;
+        }
+
+        .aboutText {
+            padding-top: 5rem;
+        }
+
+        .aboutText p {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .aboutBackground {
+            height: 16rem;
+        }
+
+        .aboutText {
+            padding-top: 3.5rem;
+        }
+
+        .aboutText p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .aboutBackground {
+            background: #FFFFFF url('/media/wysiwyg/Professional_Extension_Landing_Pages/Beauty_Works_Professional_Extensions_About_The_Hair-Mobile.png') no-repeat center;
+            background-size: 100%;
+            height: 28rem;
+        }
+
+        .aboutText {
+            padding: 13rem 3rem 0;
+        }
+
+        .aboutText p {
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .aboutBackground {
+            height: 24rem;
+        }
+
+        .aboutText {
+            padding: 11rem 2rem 0;
+        }
+
+        .aboutText p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            letter-spacing: .2px;
+        }
+    }
+
+    @media only screen and (max-width: 360px) {
+        .aboutText p {
+            font-size: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .aboutBackground {
+            height: 20rem;
+        }
+
+        .aboutText {
+            padding: 9rem 0 0;
+        }
+
+        .aboutText p {
+            letter-spacing: 0;
         }
     }
 </style>
