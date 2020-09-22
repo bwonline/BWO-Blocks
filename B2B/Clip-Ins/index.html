@@ -1,7 +1,7 @@
 <div class="container a-center">
     <div class="row argento-grid">
 
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-3 col">
             <div class="card">
                 <a href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/double-hair-set.html">
                     <img src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Set.jpg"}}" alt='Double Hair Set'
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-3 col">
             <div class="card">
                 <a href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html">
                     <img src="{{media url="wysiwyg/clip-in-2019/Deluxe-Clip-Ins.jpg"}}" alt='Deluxe Clip-Ins'
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-3 col">
             <div class="card">
                 <a href="{{store url=''}}ponytails/clip-in-ponytail.html">
                     <img src="{{media url="wysiwyg/ponytails2019/beauty-works_luxury_hair_extensions_18inch_ponytail.jpg"}}"
@@ -62,13 +62,11 @@
                 <a href="{{store url=''}}ponytails/clip-in-ponytail.html">
                     <h3>Clip-In Ponytails</h3>
                 </a>
-                <ul>
+                <ul id="ponyHeight">
                     <small>
                         <li>100% Remy Hair</li>
                         <li>90g-180g</li>
                         <li>Lengths 18"-26"</li>
-                        <li></li>
-                        <li></li>
                     </small>
                 </ul>
                 <a href="{{store url=''}}ponytails/clip-in-ponytail.html">
@@ -109,8 +107,8 @@
         margin-bottom: 2.5rem;
     }
 
-    #halfWeft-ul {
-        margin-bottom: 2.3rem;
+    #ponyHeight {
+        height: 8.8rem;
     }
 
     .shadeButton {
@@ -133,16 +131,16 @@
     }
 
     @media only screen and (max-width: 1024px) {
-        h3 {
-            /* height: 2.5rem; */
-        }
-
         .shadeButton {
             margin: auto 3px;
         }
 
         ul {
             padding-inline-start: 45px;
+        }
+
+        #ponyHeight {
+            height: 8.9rem;
         }
     }
 
@@ -169,6 +167,10 @@
         ul {
             padding-inline-start: 35px;
         }
+
+        #ponyHeight {
+            height: auto;
+        }
     }
 
     @media only screen and (max-width: 375px) {
@@ -184,7 +186,6 @@
     @media only screen and (max-width: 320px) {
         ul {
             padding-inline-start: 18px;
-            height: 10rem;
         }
     }
 </style>
