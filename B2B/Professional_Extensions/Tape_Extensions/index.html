@@ -1,7 +1,7 @@
 <div class="container a-center">
     <div class="row argento-grid">
 
-        <div class="col-md-3 col">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/tape-extensions/invisi-tape.html">
                     <img src="{{media url="wysiwyg/professional_extensions/tape_extensions/Beauty-Work-Professional-Tape-In-Extensions-Invisi-Tape.jpg"}}"
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/tape-extensions/celebrity-choice-slim-line-tape.html">
                     <img src="{{media url="wysiwyg/professional_extensions/tape_extensions/Beauty-Work-Professional-Tape-In-Extensions-SlimLine-Tape.jpg"}}"
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/professional-tape-tools.html">
                     <img src="{{media url="wysiwyg/professional_extensions/tape_extensions/Beauty-Work-Professional-Tape-In-Extension-Tools.jpg"}}"
@@ -69,7 +69,7 @@
                     </small>
                 </ul>
                 <a href="{{store url=''}}professional-extensions/professional-tape-tools.html">
-                    <div class="shadeButton">
+                    <div class="shadeButton" id="proTapeBttn">
                         <span>Shop Professional Tape Tools</span>
                     </div>
                 </a>
@@ -146,8 +146,8 @@
         }
 
         ul {
-            padding-inline-start: 20px;
-            height: 6.5rem;
+            padding-inline-start: 30px;
+            height: 6rem;
         }
 
         .shadeButton {
@@ -161,6 +161,10 @@
     }
 
     @media only screen and (max-width: 425px) {
+        h3 {
+            height: 2rem;
+        }
+
         ul {
             padding-inline-start: 35px;
             margin-top: auto;
@@ -176,11 +180,15 @@
         ul {
             padding-inline-start: 30px;
         }
+
+        #proTapeBttn {
+            padding: 4px 0
+        }
     }
 
     @media only screen and (max-width: 320px) {
         ul {
-            padding-inline-start: 18px;
+            padding-inline-start: 15px;
         }
     }
 </style>

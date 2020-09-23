@@ -1,7 +1,7 @@
 <div class="container a-center">
     <div class="row argento-grid">
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/tape-extensions.html">
                     <img src="{{media url="wysiwyg/professional_extensions/beauty_works_professional_extensions_tape_extensions.png"}}"
@@ -11,7 +11,7 @@
                 <a href="{{store url=''}}professional-extensions/tape-extensions.html">
                     <h3>Tape Extensions</h3>
                 </a>
-                <ul class="ulHeight">
+                <ul>
                     <small>
                         <li>Invisi® Tape</li>
                         <li>Celebrity Choice® SlimLine® Tape</li>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/micro-ring-extensions.html">
                     <img src="{{media url="wysiwyg/professional_extensions/beauty_works_professional_extensions_micro_ring_extensions.png"}}"
@@ -36,7 +36,7 @@
                 <a href="{{store url=''}}professional-extensions/micro-ring-extensions.html">
                     <h3>Micro Ring Extensions</h3>
                 </a>
-                <ul class="ulHeight">
+                <ul>
                     <small>
                         <li>Celebrity Choice® Stick Tip</li>
                         <li>Celebrity Choice® Nano Bond</li>
@@ -44,14 +44,14 @@
                     </small>
                 </ul>
                 <a href="{{store url=''}}professional-extensions/micro-ring-extensions.html">
-                    <div class="shadeButton">
+                    <div class="shadeButton" id="micRingBttn">
                         <span>Shop Micro Ring Extensions</span>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/pre-bonded-extensions.html">
                     <img src="
@@ -62,20 +62,20 @@
                 <a href="{{store url=''}}professional-extensions/pre-bonded-extensions.html">
                     <h3>Pre-Bonded Extensions</h3>
                 </a>
-                <ul class=" ulHeight">
+                <ul>
                     <small>
                         <li>Celebrity Choice® Flat Tips</li>
                     </small>
                 </ul>
                 <a href="{{store url=''}}professional-extensions/pre-bonded-extensions.html">
-                    <div class=" shadeButton">
+                    <div class="shadeButton" id="preBondBttn">
                         <span>Shop Pre-Bonded Extensions</span>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/weft-extensions.html">
                     <img src="{{media url="wysiwyg/professional_extensions/beauty_works_professional_extensions_weft_extensions.png"}}"
@@ -85,7 +85,7 @@
                 <a href="{{store url=''}}professional-extensions/weft-extensions.html">
                     <h3>Weft Extensions</h3>
                 </a>
-                <ul class="ulHeight">
+                <ul>
                     <small>
                         <li>Celebrity Choice® Weft</li>
                         <li>Gold Double Weft</li>
@@ -129,9 +129,6 @@
         text-align: left;
         padding-inline-start: 70px;
         margin-bottom: 2.5rem;
-    }
-
-    .ulHeight {
         height: 6rem;
     }
 
@@ -160,7 +157,7 @@
 
     @media only screen and (max-width: 1024px) {
         h3 {
-            height: 2.5rem;
+            height: 2rem;
         }
 
         .shadeButton {
@@ -169,23 +166,18 @@
 
         ul {
             padding-inline-start: 30px;
-        }
-
-        .ulHeight {
-            height: 8rem;
+            height: 7rem;
         }
     }
 
     @media only screen and (max-width: 768px) {
         h3 {
             font-size: 13px;
+            height: 1rem;
         }
 
         ul {
             padding-inline-start: 20px;
-        }
-
-        .ulHeight {
             height: 10rem;
         }
 
@@ -201,11 +193,8 @@
 
     @media only screen and (max-width: 425px) {
         ul {
-            padding-inline-start: 35px;
-        }
-
-        .ulHeight {
-            height: auto;
+            padding-inline-start: 15px;
+            height: 8rem;
         }
     }
 
@@ -216,12 +205,25 @@
 
         ul {
             padding-inline-start: 30px;
+            height: 10rem;
+        }
+
+        #preBondBttn {
+            padding: 3px 0;
         }
     }
 
     @media only screen and (max-width: 320px) {
+        h3 {
+            height: 2rem;
+        }
+
         ul {
             padding-inline-start: 18px;
+        }
+
+        #micRingBttn {
+            padding: 3px 0;
         }
     }
 </style>

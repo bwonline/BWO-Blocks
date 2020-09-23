@@ -1,7 +1,7 @@
 <div class="container a-center">
     <div class="row argento-grid">
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/weft-extensions/celebrity-choice-weft.html">
                     <img src="{{media url="wysiwyg/professional_extensions/weft_extensions/Beauty-Work-Professional-Weft-Extensions-Celebrity-Choice-Weft.jpg"}}"
@@ -21,14 +21,14 @@
                     </small>
                 </ul>
                 <a href="{{store url=''}}professional-extensions/weft-extensions/celebrity-choice-weft.html">
-                    <div class="shadeButton">
+                    <div class="shadeButton" id="ccWeftBttn">
                         <span>Shop Celebrity Choice® Weft</span>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/weft-extensions/beauty-works-gold-double-weft.html">
                     <img src="{{media url="wysiwyg/professional_extensions/weft_extensions/Beauty-Work-Professional-Weft-Extensions-Gold-Double-Weft.jpg"}}"
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}professional-extensions/weft-extensions/invisi-weft.html">
                     <img src="{{media url="wysiwyg/professional_extensions/weft_extensions/Beauty-Work-Professional-Weft-Extensions-InvisiWeft.jpg"}}"
@@ -75,14 +75,14 @@
                     </small>
                 </ul>
                 <a href="{{store url=''}}professional-extensions/weft-extensions/invisi-weft.html">
-                    <div class="shadeButton">
+                    <div class="shadeButton" id="invisiweftBttn">
                         <span>Shop Invisi®Weft</span>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-6">
             <div class="card">
                 <a
                     href="{{store url=''}}professional-extensions/weft-extensions/professional-weft-extension-tools.html">
@@ -197,8 +197,12 @@
     }
 
     @media only screen and (max-width: 425px) {
+        h3 {
+            height: 2rem;
+        }
+
         ul {
-            padding-inline-start: 35px;
+            padding-inline-start: 15px;
             margin-top: 0;
             height: auto;
         }
@@ -212,11 +216,24 @@
         ul {
             padding-inline-start: 30px;
         }
+
+        #ccWeftBttn {
+            padding: 2px 0;
+        }
     }
 
     @media only screen and (max-width: 320px) {
         ul {
-            padding-inline-start: 18px;
+            padding-inline-start: 10px;
+            height: 13rem;
+        }
+
+        .shadeButton {
+            padding: 2px 0;
+        }
+
+        #invisiweftBttn {
+            padding: 10px 0;
         }
     }
 </style>
