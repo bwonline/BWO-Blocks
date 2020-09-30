@@ -46,7 +46,7 @@
                     </small>
                 </ul>
                 <a href="{{store url=''}}ponytails/clip-in-ponytail/20-beach-wave-invisi-ponytail.html">
-                    <div class="shadeButton">
+                    <div class="shadeButton" id="tInchBWPony">
                         <span>Shop 20” Beach Wave Invisi® Ponytail</span>
                     </div>
                 </a>
@@ -72,7 +72,7 @@
                     </small>
                 </ul>
                 <a href="{{store url=''}}ponytails/clip-in-ponytail/24-insta-braid-ponytail.html">
-                    <div class="shadeButton">
+                    <div class="shadeButton" id="tsInchSSPony">
                         <span>Shop 24” Insta Braid Ponytail</span>
                     </div>
                 </a>
@@ -164,6 +164,10 @@
             padding: 10px 5px;
         }
 
+        #tInchBWPony {
+            padding: 10px 0px;
+        }
+
         ul {
             padding-inline-start: 7rem;
         }
@@ -182,10 +186,28 @@
             font-size: 11px;
             padding: 5px;
         }
+
+        #tInchBWPony {
+            padding: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        #tsInchSSPony {
+            padding: 5px 12px;
+        }
     }
 
     @media only screen and (max-width: 375px) {
         .shadeButton {
+            padding: 3px;
+        }
+
+        #tInchBWPony {
+            padding: 3px 5px;
+        }
+
+        #tsInchSSPony {
             padding: 3px;
         }
 
@@ -201,6 +223,10 @@
     @media only screen and (max-width: 320px) {
         ul {
             padding-inline-start: 15px;
+        }
+
+        #tInchBWPony {
+            padding: 3px;
         }
     }
 </style>
