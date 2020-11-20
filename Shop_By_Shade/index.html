@@ -1,10 +1,17 @@
 <div class="container">
 
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-xs-12">
-            <img src="{{media url="wysiwyg/shop-shade/GlamSeamless_GIF_V2.gif"}}" alt="" />
+            <div class="hidden-xs">
+                <img src="{{media url="wysiwyg/shop-shade/shop-by-shade-banner-desktop.gif"}}" alt="Shop By Shade"
+                    title="Shop By Shade" />
+            </div>
+            <div class="visible-xs-block">
+                <img src="{{media url="wysiwyg/shop-shade/shop-by-shade-banner-mobile.gif"}}" alt="Shop By Shade"
+                    title="Shop By Shade" />
+            </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="row">
 
@@ -133,13 +140,21 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <a class="cta-bttn" href="{{store url=''}}">Shop Instagram</a>
+            <a class="cta-bttn" href="{{store url=''}}shop-social">Shop Instagram</a>
         </div>
     </div>
 
 </div>
 
 <style>
+    .breadcrumbs .items {
+        color: white;
+    }
+
+    .breadcrumbs .items a {
+        color: white;
+    }
+
     .catalog-category-view .page-main .category-view {
         padding-top: 1rem;
     }
