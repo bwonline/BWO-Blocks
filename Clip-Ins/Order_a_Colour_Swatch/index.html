@@ -1,29 +1,7 @@
 <div class="container a-center">
     <div class="row argento-grid">
 
-        <div class="col-md-3 col-xs-6">
-            <div class="card">
-                <a href="{{store url=''}}luxury-swatch.html">
-                    <img src="{{media url='wysiwyg/clip-in-2019/lux_swatch.jpg'}}" alt='Beauty Works Luxury Swatch'
-                        title='Beauty Works Luxury Swatch'>
-                </a>
-                <a href="{{store url=''}}luxury-swatch.html">
-                    <h3>Luxury Swatch</h3>
-                </a>
-                <p>
-                    <small>
-                        As low as <b>£3.49</b>
-                    </small>
-                </p>
-                <a href="{{store url=''}}luxury-swatch.html">
-                    <div class="shadeButton">
-                        <span>Shop Luxury Swatches</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-xs-6">
+        <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="card">
                 <a href="{{store url=''}}colour-match-me-tester.html">
                     <img src="{{media url='wysiwyg/clip-in-2019/newcolour_match_me.jpg'}}" alt='Colour Match Me'
@@ -32,14 +10,40 @@
                 <a href="{{store url=''}}colour-match-me-tester.html">
                     <h3>Colour Match Me</h3>
                 </a>
-                <p>
+                <ul>
                     <small>
-                        As low as <b>£4.99</b>
+                        <li>Clip-In Swatch</li>
+                        <li>Sleek Straight</li>
+                        <li>100% Remy Hair</li>
                     </small>
-                </p>
+                </ul>
                 <a href="{{store url=''}}colour-match-me-tester.html">
                     <div class="shadeButton">
-                        <span>Find Your Shade</span>
+                        <span>Select Shade</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="card">
+                <a href="{{store url=''}}luxury-swatch.html">
+                    <img src="{{media url='wysiwyg/clip-in-2019/lux_swatch.jpg'}}" alt='Hair Swatch'
+                        title='Hair Swatch'>
+                </a>
+                <a href="{{store url=''}}luxury-swatch.html">
+                    <h3>Hair Swatch</h3>
+                </a>
+                <ul>
+                    <small>
+                        <li>Single Swatch</li>
+                        <li>Sleek Straight</li>
+                        <li>100% Remy Hair</li>
+                    </small>
+                </ul>
+                <a href="{{store url=''}}luxury-swatch.html">
+                    <div class="shadeButton">
+                        <span>Select Shade</span>
                     </div>
                 </a>
             </div>
@@ -68,6 +72,13 @@
         text-decoration: none !important;
     }
 
+    ul {
+        list-style-type: circle;
+        text-align: left;
+        padding-inline-start: 70px;
+        margin-bottom: 2rem;
+    }
+
     .shadeButton {
         background-color: black;
         border: solid black .5px;
@@ -83,6 +94,10 @@
         color: black !important;
     }
 
+    .page-products .columns {
+        padding-top: 0;
+    }
+
     @media only screen and (max-width: 1024px) {
         h3 {
             height: 1rem;
@@ -92,6 +107,10 @@
             margin: auto 3px;
             padding: 10px 5px;
         }
+
+        ul {
+            padding-inline-start: 45px;
+        }
     }
 
     @media only screen and (max-width: 768px) {
@@ -99,15 +118,35 @@
             font-size: 13px;
         }
 
+        ul {
+            padding-inline-start: 20px;
+        }
+
         .shadeButton {
             font-size: 11px;
-            padding: 5px 3px;
+            padding: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        ul {
+            padding-inline-start: 35px;
         }
     }
 
     @media only screen and (max-width: 375px) {
         .shadeButton {
-            padding: 5px 0;
+            padding: 5px;
+        }
+
+        ul {
+            padding-inline-start: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        ul {
+            padding-inline-start: 15px;
         }
     }
 </style>
