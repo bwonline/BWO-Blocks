@@ -1,0 +1,119 @@
+<div class="container" style="display: flow-root;">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page_outlines" id="gallery">Gallery</h2>
+        </div>
+    </div>
+    <div class="row dktpGallery">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2">
+            {{widget type="Swissup\Lightboxpro\Block\Widgets\Gallery" img_width="500" img_height="500" thumb_width="100"
+            thumb_height="100"
+            gallery="file=132831579_399760168025600_9050993511094222189_n_1.jpg&amp;position=1&amp;label="}}
+        </div>
+        <div class="col-xs-2">
+            {{widget type="Swissup\Lightboxpro\Block\Widgets\Gallery" img_width="500" img_height="500" thumb_width="100"
+            thumb_height="100"
+            gallery="file=135903569_222879596007067_1570596707659380039_n_1.jpg&amp;position=1&amp;label="}}
+        </div>
+        <div class="col-xs-2">
+            {{widget type="Swissup\Lightboxpro\Block\Widgets\Gallery" img_width="500" img_height="500" thumb_width="100"
+            thumb_height="100"
+            gallery="file=137119122_119982729950518_3820831868605598762_n_1.jpg&amp;position=1&amp;label="}}
+        </div>
+        <div class="col-xs-2">
+            {{widget type="Swissup\Lightboxpro\Block\Widgets\Gallery" img_width="500" img_height="500" thumb_width="100"
+            thumb_height="100"
+            gallery="file=145155887_2024067071068205_124594820835666570_n_1.jpg&amp;position=1&amp;label="}}
+        </div>
+        <div class="col-xs-2">
+
+            {{widget type="Swissup\Lightboxpro\Block\Widgets\Gallery" img_width="500" img_height="500" thumb_width="100"
+            thumb_height="100"
+            gallery="file=146021204_107940524650167_6980520773595592970_n_1.jpg&amp;position=1&amp;label="}}
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+
+    <div class="row mobGallery">
+        <div class="col-xs-12">
+            <center>
+                {{widget type="Swissup\Lightboxpro\Block\Widgets\Gallery" img_width="300" img_height="300"
+                thumb_width="100" thumb_height="100"
+                gallery="file=132831579_399760168025600_9050993511094222189_n.jpg&amp;position=1&amp;label=;file=135903569_222879596007067_1570596707659380039_n.jpg&amp;position=2&amp;label=;file=137119122_119982729950518_3820831868605598762_n.jpg&amp;position=3&amp;label=;file=145155887_2024067071068205_124594820835666570_n.jpg&amp;position=4&amp;label=;file=146021204_107940524650167_6980520773595592970_n.jpg&amp;position=5&amp;label="}}
+            </center>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page_outlines" id="fave">Faves</h2>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .catalog-category-view .page-main .category-view {
+        padding: 1rem !important;
+    }
+
+    .catalog-category-view .page-main .page-title-wrapper {
+        display: none;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .page_outlines {
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #373737;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    #gallery {
+        margin: 3rem 0 5rem;
+    }
+
+    #fave {
+        margin-top: 3rem;
+    }
+
+    .page_outlines::after {
+        margin: 2rem auto;
+    }
+
+    .mobGallery {
+        display: none;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .catalog-category-view .page-main .category-view {
+            padding: 1rem !important;
+        }
+
+        .page_outlines {
+            font-size: 2.5rem;
+        }
+
+        #gallery {
+            margin: 2rem 0 2.5rem;
+        }
+
+        #fave {
+            margin-top: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        .mobGallery {
+            display: block;
+        }
+
+        .dktpGallery {
+            display: none;
+        }
+    }
+</style>
