@@ -1,0 +1,247 @@
+<div class="container" style="display: flow-root;">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page_outlines" id="gallery">Gallery</h2>
+        </div>
+    </div>
+    <div class="row dktpGallery">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2">
+            <a href="{{store url=''}}">
+                <img src="" alt='' title='' style="width:100%" />
+            </a>
+        </div>
+        <div class="col-xs-2">
+            <a href="{{store url=''}}">
+                <img src="" alt='' title='' style="width:100%" />
+            </a>
+        </div>
+        <div class="col-xs-2">
+            <a href="{{store url=''}}">
+                <img src="" alt='' title='' style="width:100%" />
+            </a>
+        </div>
+        <div class="col-xs-2">
+            <a href="{{store url=''}}">
+                <img src="" alt='' title='' style="width:100%" />
+            </a>
+        </div>
+        <div class="col-xs-2">
+            <a href="{{store url=''}}">
+                <img src="" alt='' title='' style="width:100%" />
+            </a>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="mobGallery">
+                <div class="mySlides">
+                    <a href="{{store url=''}}">
+                        <img src="" alt='' title='' style="width:100%" />
+                    </a>
+                </div>
+                <div class="mySlides">
+                    <a href="{{store url=''}}">
+                        <img src="" alt='' title='' style="width:100%" />
+                    </a>
+                </div>
+                <div class="mySlides">
+                    <a href="{{store url=''}}">
+                        <img src="" alt='' title='' style="width:100%" />
+                    </a>
+                </div>
+                <div class="mySlides">
+                    <a href="{{store url=''}}">
+                        <img src="" alt='' title='' style="width:100%" />
+                    </a>
+                </div>
+                <div class="mySlides">
+                    <a href="{{store url=''}}">
+                        <img src="" alt='' title='' style="width:100%" />
+                    </a>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="row">
+                    <div class="demoCol">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(1)" alt='' title=''>
+                    </div>
+                    <div class="demoCol">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(2)" alt='' title=''>
+                    </div>
+                    <div class="demoCol">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(3)" alt='' title=''>
+                    </div>
+                    <div class="demoCol">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)" alt='' title=''>
+                    </div>
+                    <div class="demoCol">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(5)" alt='' title=''>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page_outlines" id="fave">Faves</h2>
+        </div>
+    </div>
+</div>
+
+<style>
+    .catalog-category-view .page-main .category-view {
+        padding: 1rem !important;
+    }
+
+    .catalog-category-view .page-main .page-title-wrapper {
+        display: none;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .page_outlines {
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #373737;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    #gallery {
+        margin: 3rem 0 5rem;
+    }
+
+    #fave {
+        margin-top: 3rem;
+    }
+
+    .page_outlines::after {
+        margin: 2rem auto;
+    }
+
+    /* Mobile Gallery */
+    .mobGallery img {
+        vertical-align: middle;
+    }
+
+    .mobGallery {
+        position: relative;
+        display: none;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        text-decoration: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .demoCol {
+        float: left;
+        width: 20%;
+    }
+
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .catalog-category-view .page-main .category-view {
+            padding: 1rem !important;
+        }
+
+        .page_outlines {
+            font-size: 2.5rem;
+        }
+
+        #gallery {
+            margin: 2rem 0 2.5rem;
+        }
+
+        #fave {
+            margin-top: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        .mobGallery {
+            display: block;
+        }
+
+        .dktpGallery {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName('mySlides');
+        const dots = document.getElementsByClassName('demo');
+        // const captionText = document.getElementById('caption');
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+        // captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
