@@ -7,36 +7,52 @@
     <div class="row dktpGallery">
         <div class="col-xs-1"></div>
         <div class="col-xs-2">
-            <a href="{{store url=''}}26-double-hair-set.html">
-                <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-26-inch_double_hair_set-jet_set_black.jpg&quot;}}"
-                    alt='Kenza Edit - 26" Double Hair Set - Jet Set Black'
-                    title='Kenza Edit - 26" Double Hair Set - Jet Set Black' style="width:100%" />
-            </a>
+            <div class="container container1">
+                <a href="{{store url=''}}26-double-hair-set.html">
+                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-26-inch_double_hair_set-jet_set_black.jpg&quot;}}"
+                        alt='Kenza Edit - 26" Double Hair Set - Jet Set Black'
+                        title='Kenza Edit - 26" Double Hair Set - Jet Set Black' style="width:100%" />
+                    <div class="overlay">Kenza Edit - 26" Double Hair Set - Jet Set Black</div>
+                </a>
+            </div>
         </div>
         <div class="col-xs-2">
-            <a href="{{store url=''}}argan-serum-80ml.html">
-                <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-argan_serum.jpg&quot;}}"
-                    alt='Kenza Edit - Argan Serum 90ml' title='Kenza Edit - Argan Serum 90ml' style="width:100%" />
-            </a>
+            <div class="container container2">
+                <a href="{{store url=''}}argan-serum-80ml.html">
+                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-argan_serum.jpg&quot;}}"
+                        alt='Kenza Edit - Argan Serum 90ml' title='Kenza Edit - Argan Serum 90ml' style="width:100%" />
+                    <div class="overlay">Kenza Edit - Argan Serum 90ml</div>
+                </a>
+            </div>
         </div>
         <div class="col-xs-2">
-            <a href="{{store url=''}}beauty-works-waver.html">
-                <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-the_waver.jpg&quot;}}"
-                    alt='Kenza Edit - The Waver' title='Kenza Edit - The Waver' style="width:100%" />
-            </a>
+            <div class="container container3">
+                <a href="{{store url=''}}beauty-works-waver.html">
+                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-the_waver.jpg&quot;}}"
+                        alt='Kenza Edit - The Waver' title='Kenza Edit - The Waver' style="width:100%" />
+                    <div class="overlay">Kenza Edit - The Waver</div>
+                </a>
+            </div>
         </div>
         <div class="col-xs-2">
-            <a href="{{store url=''}}dream-shine-300ml.html">
-                <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-dream_shine-300ml.jpg&quot;}}"
-                    alt='Kenza Edit - Dream Shine 300ml' title='Kenza Edit - Dream Shine 300ml' style="width:100%" />
-            </a>
+            <div class="container container4">
+                <a href="{{store url=''}}dream-shine-300ml.html">
+                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-dream_shine-300ml.jpg&quot;}}"
+                        alt='Kenza Edit - Dream Shine 300ml' title='Kenza Edit - Dream Shine 300ml'
+                        style="width:100%" />
+                    <div class="overlay">Kenza Edit - Dream Shine 300ml</div>
+                </a>
+            </div>
         </div>
         <div class="col-xs-2">
-            <a href="{{store url=''}}26-double-hair-set.html">
-                <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-26-inch_double_hair_set-natural_black.jpg&quot;}}"
-                    alt='Kenza Edit - 26" Double Hair Set - Natural Black'
-                    title='Kenza Edit - 26" Double Hair Set - Natural Black' style="width:100%" />
-            </a>
+            <div class="container container5">
+                <a href="{{store url=''}}26-double-hair-set.html">
+                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/Kenza_Edit/kenza_edit_gallery-26-inch_double_hair_set-natural_black.jpg&quot;}}"
+                        alt='Kenza Edit - 26" Double Hair Set - Natural Black'
+                        title='Kenza Edit - 26" Double Hair Set - Natural Black' style="width:100%" />
+                    <div class="overlay">Kenza Edit - 26" Double Hair Set - Natural Black</div>
+                </a>
+            </div>
         </div>
         <div class="col-xs-1"></div>
     </div>
@@ -79,6 +95,9 @@
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
                 <div class="row">
                     <div class="demoCol">
                         <img class="demo cursor"
@@ -196,6 +215,14 @@
         border-radius: 3px 0 0 3px;
     }
 
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: #EEEEEE;
+        height: 5rem;
+    }
+
     .row:after {
         content: "";
         display: table;
@@ -260,7 +287,7 @@
         let i;
         const slides = document.getElementsByClassName('mySlides');
         const dots = document.getElementsByClassName('demo');
-        // const captionText = document.getElementById('caption');
+        const captionText = document.getElementById('caption');
         if (n > slides.length) {
             slideIndex = 1;
         }
@@ -275,6 +302,55 @@
         }
         slides[slideIndex - 1].style.display = 'block';
         dots[slideIndex - 1].className += ' active';
-        // captionText.innerHTML = dots[slideIndex - 1].alt;
+        captionText.innerHTML = dots[slideIndex - 1].alt;
     }
 </script>
+
+<!-- DESKTOP GALLERY HOVER EFFECT -->
+<style>
+    .dktpGallery * {
+        box-sizing: border-box;
+    }
+
+    .dktpGallery .container {
+        position: relative;
+        /* width: 50%; */
+        max-width: 300px;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: #EEEEEE;
+        font-size: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container1:hover .overlay {
+        opacity: 1;
+    }
+
+    .container2:hover .overlay {
+        opacity: 1;
+    }
+
+    .container3:hover .overlay {
+        opacity: 1;
+    }
+
+    .container4:hover .overlay {
+        opacity: 1;
+    }
+
+    .container5:hover .overlay {
+        opacity: 1;
+    }
+</style>
