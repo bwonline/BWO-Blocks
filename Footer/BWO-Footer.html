@@ -82,14 +82,29 @@
     </div>
 
     <div class="social-icons colorize-fa-hover">
-        <a href="https://twitter.com/#!/beauty_works"><img src="{{media url='wysiwyg/tw.png'}}"
-                alt="Beauty Works Twitter" title="Beauty Works Twitter" /></a>
-        <a href="https://ssl.facebook.com/pages/Beauty-Works-Online/138066019563558"><img
-                src="{{media url='wysiwyg/fb.png'}}" alt="Beauty Works Facebook" title="Beauty Works Facebook" /></a>
-        <a href="https://www.youtube.com/user/beautyworks"><img src="{{media url='wysiwyg/yt.png'}}"
-                alt="Beauty Works YouTube" title="Beauty Works YouTube" /></a>
-        <a href="https://instagram.com/beauty_worksonline"><img src="{{media url='wysiwyg/insta.png'}}"
-                alt="Beauty Works Instagram" title="Beauty Works Instagram" /></a>
+        <div id="social-padding">
+            <a target="_blank" href="https://twitter.com/#!/beauty_works">
+                <img src="{{media url='wysiwyg/tw.png'}}" alt="Beauty Works Twitter" title="Beauty Works Twitter" />
+            </a>
+            <a target="_blank" href="https://ssl.facebook.com/pages/Beauty-Works-Online/138066019563558">
+                <img src="{{media url='wysiwyg/fb.png'}}" alt="Beauty Works Facebook" title="Beauty Works Facebook" />
+            </a>
+            <a target="_blank" href="https://www.youtube.com/user/beautyworks">
+                <img src="{{media url='wysiwyg/yt.png'}}" alt="Beauty Works YouTube" title="Beauty Works YouTube" />
+            </a>
+            <a target="_blank" href="https://instagram.com/beauty_worksonline">
+                <img src="{{media url='wysiwyg/insta.png'}}" alt="Beauty Works Instagram"
+                    title="Beauty Works Instagram" />
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/@beauty_works?lang=en">
+                <img style="width: 36px;" src="{{media url='wysiwyg/pinterest.png'}}" alt="Beauty Works Pinterest"
+                    title="Beauty Works Pinterest" />
+            </a>
+            <a target="_blank" href="https://www.pinterest.co.uk/beautyworkspins/">
+                <img style="width: 36px;" src="{{media url='wysiwyg/tiktok.png'}}" alt="Beauty Works Tiktok"
+                    title="Beauty Works Tiktok" />
+            </a>
+        </div>
         <br />
         <img class="globale-hide" src="{{media url='wysiwyg/beauty-works-secure-payments-visa-mastercard-paypal.png'}}"
             alt="PayPal, Payl8r, Visa, Mastercard Payment Cards Accepted"
@@ -116,6 +131,12 @@
         @media only screen and (max-width: 425px) {
             .social-icons {
                 padding-top: 15px !important;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            #social-padding {
+                padding: 0 5rem;
             }
         }
     </style>
