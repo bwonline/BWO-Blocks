@@ -1,174 +1,220 @@
-<div class="container jumbotron">
-    <div class="row">
-        <div class="col-xs-12 hidden-xs topSldr">
-            {{widget type="Swissup\EasySlide\Block\Slider" identifier="styling-tools2020"}}
-        </div>
-        <div class="col-xs-12 visible-xs-block topSldr">
-            {{widget type="Swissup\EasySlide\Block\Slider" identifier="styling-tools-mob2020"}}
-        </div>
-    </div>
+<!-- CTA Block Styling -->
+<style>
+    .card {
+        padding: 20px;
+        text-align: center;
+    }
 
-    <div class="row">
-        <div class="col-xs-12">
-            <h2 class="h2title">Awards</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
+    .card a {
+        text-decoration: none;
+    }
 
-            <div class="jumbotron-slick">
-                <div class="container">
-                    <div class="block widget block-carousel">
-                        <div class="block-content">
-                            <div class="slick-slider"
-                                data-mage-init='{"slick": {"slidesToShow": 6, "slidesToScroll": 1, "dots": false, "autoplay": true, "variableWidth": true, "swipeToSlide": true}}'>
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-beauty-awards-2016-finalist.png'}}"
-                                    alt="Beauty Awards 2016 Finalist" title="Beauty Awards 2016 Finalist" />
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-beauty-awards-with-ASOS-2019-winner.png'}}"
-                                    alt="Beauty Awards with ASOS 2019 Winner"
-                                    title="Beauty Awards with ASOS 2019 Winner" />
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2016-winner.png'}}"
-                                    alt="Hair Awards 2016 Winner" title="Hair Awards 2016 Winner" />
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2017-winner.png'}}"
-                                    alt="Hair Awards 2017 Winner" title="Hair Awards 2017 Winner" />
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2018-winner.png'}}"
-                                    alt="Hair Awards 2018 Winner" title="Hair Awards 2018 Winner" />
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2019-winner.png'}}"
-                                    alt="Hair Awards 2019 Winner" title="Hair Awards 2019 Winner" />
-                                <img class="awardsImg"
-                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-marie-claire-award-2018.png'}}"
-                                    alt="Marie Claire Awards 2018" title="Marie Claire Awards 2018" />
-                            </div>
-                        </div>
-                    </div>
+    .card-title {
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 1.6rem;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #373737;
+        padding-top: 15px;
+        margin-bottom: 1rem
+    }
+
+    .card-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .card-text {
+        margin-bottom: 2em !important;
+        color: #6d6d6d !important;
+    }
+
+    .card-btn {
+        background: #373737;
+        border: solid #373737 1px;
+        color: white !important;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .card-btn:hover {
+        background: transparent;
+        color: #373737 !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .card {
+            padding: 25px 5px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            padding-top: 5px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-btn {
+            font-size: 12px;
+            padding: 7px 20px
+        }
+    }
+</style>
+
+<div class="container" style="display: flow-root;">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="card">
+                <a href="{{store url=''}}styling-tools/shop-by-products.html" title="Shop All Styling Tools">
+                    <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-shop-all.jpg'}}"
+                        class="card-img-top" loading="lazy" alt="Shop All Styling Tools" title="Shop All Styling Tools">
+                </a>
+                <div class="card-body">
+                    <a href="{{store url=''}}styling-tools/shop-by-products.html" title="Shop All Styling Tools">
+                        <h5 class="card-title">Shop All Styling Tools</h5>
+                    </a>
+                    <p class="card-text">Treat yourself to salon-worthy hair from the comfort of your home. Shop your
+                        way to head-turning hair with her limited edition styling tools.</p>
+                    <a href="{{store url=''}}styling-tools/shop-by-products.html" class="card-btn"
+                        title="Shop All Styling Tools">Shop Now</a>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 a-center" style="padding: 3rem;">
-            <a class="cta-bttn" href="{{store url=''}}hair-extensions-awards">See More</a>
-        </div>
-    </div>
-
-    <div class="row">
         <div class="col-md-6 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}styling-tools/shop-by-products.html">
-                    <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-shop-all.jpg'}}"
-                        alt="Shop All Styling Tools" title="Shop All Styling Tools" />
+            <div class="card">
+                <a href="{{store url=''}}beauty-works-x-molly-mae-hair-straightener-kit.html"
+                    title="Molly-Mae Straightener Kit">
+                    <img src="{{media url=&quot;wysiwyg/styling-tools/Beauty-Works-x-Molly-Mae_Luxury-Hair-Extensions-Hair-Straightener-Kit-CTA2.jpg&quot;}}"
+                        class="card-img-top" loading="lazy" alt="Molly-Mae Straightener Kit"
+                        title="Molly-Mae Straightener Kit">
                 </a>
-                <a href="{{store url=''}}styling-tools/shop-by-products.html">
-                    <h3 class="cta-title">Shop All Styling Tools</h3>
-                </a>
-                <p class="stylerCopy">Treat yourself to salon-worthy hair from the comfort of your home. Shop your way
-                    to head-turning hair with her limited edition styling tools.</p>
-                <a class="cta-bttn" href="{{store url=''}}styling-tools/shop-by-products.html">Shop Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}beauty-works-x-molly-mae-hair-straightener-kit.html"
+                        title="Molly-Mae Straightener Kit">
+                        <h5 class="card-title">Molly-Mae Straightener Kit</h5>
+                    </a>
+                    <p class="card-text">Create sleeker, smoother strands with Beauty Works' first ever straightener.
+                        The kit comes complete with a vegan bristle paddle brush and a faux leather case.</p>
+                    <a href="{{store url=''}}beauty-works-x-molly-mae-hair-straightener-kit.html" class="card-btn"
+                        title="Molly-Mae Straightener Kit">Shop Now</a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}shop-social">
-                    <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-hair-inspiration.jpg'}}"
-                        alt="Hair Inspiration" title="Hair Inspiration" />
-                </a>
-                <a href="{{store url=''}}shop-social">
-                    <h3 class="cta-title">Hair Inspiration</h3>
-                </a>
-                <p class="stylerCopy">In need of a little hairstyle inspiration? We got you! Discover our award-winning
-                    hair stylers, that have been lighting up your feed.</p>
-                <a class="cta-bttn" href="{{store url=''}}shop-social">Shop Now</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12">
-            <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}beauty-works-waver.html">
+            <div class="card">
+                <a href="{{store url=''}}beauty-works-waver.html" title="Beauty Works Styling Tools - The Waver">
                     <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-the-waver.jpg'}}"
-                        alt="The Waver" title="The Waver" />
+                        class="card-img-top" loading="lazy" alt="Beauty Works Styling Tools - The Waver"
+                        title="Beauty Works Styling Tools - The Waver">
                 </a>
-                <a href="{{store url=''}}beauty-works-waver.html">
-                    <h3 class="cta-title stylerName">The Waver</h3>
-                </a>
-                <a class="cta-bttn" href="{{store url=''}}beauty-works-waver.html">Shop Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}beauty-works-waver.html" title="Beauty Works Styling Tools - The Waver">
+                        <h5 class="card-title">The Waver</h5>
+                    </a>
+                    <a href="{{store url=''}}beauty-works-waver.html" class="card-btn"
+                        title="Beauty Works Styling Tools - The Waver">Shop Now</a>
+                </div>
             </div>
         </div>
-
         <div class="col-md-4 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html">
+            <div class="card">
+                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html"
+                    title="Beauty Works Styling Tools - Flat Iron Bar 25mm">
                     <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-flat-iron-bar-25mm.jpg'}}"
-                        alt="Flat Iron Bar 25mm" title="Flat Iron Bar 25mm" />
+                        class="card-img-top" loading="lazy" alt="Beauty Works Styling Tools - Flat Iron Bar 25mm"
+                        title="Beauty Works Styling Tools - Flat Iron Bar 25mm">
                 </a>
-                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html">
-                    <h3 class="cta-title stylerName">Flat Iron Wave Bar 25mm</h3>
-                </a>
-                <a class="cta-bttn" href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html">Shop Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html"
+                        title="Beauty Works Styling Tools - Flat Iron Bar 25mm">
+                        <h5 class="card-title">Flat Iron Bar 25mm</h5>
+                    </a>
+                    <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html" class="card-btn"
+                        title="Beauty Works Styling Tools - Flat Iron Bar 25mm">Shop Now</a>
+                </div>
             </div>
         </div>
-
         <div class="col-md-4 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}beauty-works-professional-styler.html">
+            <div class="card">
+                <a href="{{store url=''}}beauty-works-professional-styler.html"
+                    title="Beauty Works Styling Tools - The Professional Styler">
                     <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-the-professional-styler.jpg'}}"
-                        alt="The Professional Styler" title="The Professional Styler" />
+                        class="card-img-top" loading="lazy" alt="Beauty Works Styling Tools - The Professional Styler"
+                        title="Beauty Works Styling Tools - The Professional Styler">
                 </a>
-                <a href="{{store url=''}}beauty-works-professional-styler.html">
-                    <h3 class="cta-title stylerName">The Professional Styler</h3>
-                </a>
-                <a class="cta-bttn" href="{{store url=''}}beauty-works-professional-styler.html">Shop Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}beauty-works-professional-styler.html"
+                        title="Beauty Works Styling Tools - The Professional Styler">
+                        <h5 class="card-title">The Professional Styler</h5>
+                    </a>
+                    <a href="{{store url=''}}beauty-works-professional-styler.html" class="card-btn"
+                        title="Beauty Works Styling Tools - The Professional Styler">Shop Now</a>
+                </div>
             </div>
         </div>
-
         <div class="col-md-4 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}beauty-works-professional-styler-trio-edition.html">
+            <div class="card">
+                <a href="{{store url=''}}beauty-works-professional-styler-trio-edition.html"
+                    title="Beauty Works Styling Tools - The Professional Styler Trio Edition">
                     <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-the-professional-styler-trio-edition.jpg'}}"
-                        alt="The Professional Styler Trio Edition" title="The Professional Styler Trio Edition" />
+                        class="card-img-top" loading="lazy"
+                        alt="Beauty Works Styling Tools - The Professional Styler Trio Edition"
+                        title="Beauty Works Styling Tools - The Professional Styler Trio Edition">
                 </a>
-                <a href="{{store url=''}}beauty-works-professional-styler-trio-edition.html">
-                    <h3 class="cta-title stylerName">The Professional Styler Trio Edition</h3>
-                </a>
-                <a class="cta-bttn" href="{{store url=''}}beauty-works-professional-styler-trio-edition.html">Shop
-                    Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}beauty-works-professional-styler-trio-edition.html"
+                        title="Beauty Works Styling Tools - The Professional Styler Trio Edition">
+                        <h5 class="card-title">The Professional Styler Trio Edition</h5>
+                    </a>
+                    <a href="{{store url=''}}beauty-works-professional-styler-trio-edition.html" class="card-btn"
+                        title="Beauty Works Styling Tools - The Professional Styler Trio Edition">Shop Now</a>
+                </div>
             </div>
         </div>
-
         <div class="col-md-4 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-38mm.html">
+            <div class="card">
+                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-38mm.html"
+                    title="Beauty Works Styling Tools - Flat Iron Bar 38mm">
                     <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-flat-iron-bar-38mm.jpg'}}"
-                        alt="Flat Iron Bar 38mm" title="Flat Iron Bar 38mm" />
+                        class="card-img-top" loading="lazy" alt="Beauty Works Styling Tools - Flat Iron Bar 38mm"
+                        title="Beauty Works Styling Tools - Flat Iron Bar 38mm">
                 </a>
-                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-38mm.html">
-                    <h3 class="cta-title stylerName">Flat Iron Wave Bar 38mm</h3>
-                </a>
-                <a class="cta-bttn" href="{{store url=''}}beauty-works-flat-iron-wave-bar-38mm.html">Shop Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-38mm.html"
+                        title="Beauty Works Styling Tools - Flat Iron Bar 38mm">
+                        <h5 class="card-title">Flat Iron Bar 38mm</h5>
+                    </a>
+                    <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-38mm.html" class="card-btn"
+                        title="Beauty Works Styling Tools - Flat Iron Bar 38mm">Shop Now</a>
+                </div>
             </div>
         </div>
-
         <div class="col-md-4 col-xs-12">
-            <div class="cta-block">
-                <a href="{{store url=''}}collaborations/beauty-works-x-molly-mae.html">
+            <div class="card">
+                <a href="{{store url=''}}collaborations/beauty-works-x-molly-mae.html"
+                    title="Beauty Works Styling Tools - Molly-Mae Collaborations">
                     <img src="{{media url='wysiwyg/styling-tools/beauty-works-styling-tools-molly-mae-collaborations.jpg'}}"
-                        alt="Molly-Mae Collaborations" title="Molly-Mae Collaborations" />
+                        class="card-img-top" loading="lazy" alt="Beauty Works Styling Tools - Molly-Mae Collaborations"
+                        title="Beauty Works Styling Tools - Molly-Mae Collaborations">
                 </a>
-                <a href="{{store url=''}}collaborations/beauty-works-x-molly-mae.html">
-                    <h3 class="cta-title stylerName">Molly-Mae Collaborations</h3>
-                </a>
-                <a class="cta-bttn" href="{{store url=''}}collaborations/beauty-works-x-molly-mae.html">Shop Now</a>
+                <div class="card-body">
+                    <a href="{{store url=''}}collaborations/beauty-works-x-molly-mae.html"
+                        title="Beauty Works Styling Tools - Molly-Mae Collaborations">
+                        <h5 class="card-title">Molly-Mae Collaborations</h5>
+                    </a>
+                    <a href="{{store url=''}}collaborations/beauty-works-x-molly-mae.html" class="card-btn"
+                        title="Beauty Works Styling Tools - Molly-Mae Collaborations">Shop Now</a>
+                </div>
             </div>
         </div>
     </div>
@@ -180,103 +226,107 @@
     </div>
     <div class="row">
         <div class="col-md-6 col-xs-12">
-            <div class="cta-block">
-                <a href="https://www.instagram.com/tv/B-IOIg2FtXD/?hl=en" target="_blank">
-                    <img class="tutorialVid"
-                        src="{{media url='wysiwyg/styling-tools/beauty-works_the_waver_tutorial.png'}}"
+            <div class="card">
+                <a href="https://www.instagram.com/tv/B-IOIg2FtXD/?hl=en" target="_blank"
+                    title="Polly Marchant's tutorial for the Beauty Works Professional Styler">
+                    <img src="{{media url='wysiwyg/styling-tools/beauty-works_the_waver_tutorial.png'}}"
+                        class="card-img-top" loading="lazy"
                         alt="Polly Marchant's tutorial for the Beauty Works Professional Styler"
-                        title="Polly Marchant's tutorial for the Beauty Works Professional Styler" />
+                        title="Polly Marchant's tutorial for the Beauty Works Professional Styler">
                 </a>
-                <script type="application/ld+json">
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "VideoObject",
-                        "name": "Curl Hacks to try at home",
-                        "description": "Polly Marchant shows us her top tips for the perfect curls using the Professional Styler, our award-winning extra long barrel curling wand",
-                        "uploadDate": "2020-03-24",
-                        "contentUrl": "https://www.instagram.com/tv/B-IOIg2FtXD/?hl=en",
-                    }
-                </script>
-                <p>Curls for day! Discover how to get long-lasting curls with <a
-                        href="https://www.instagram.com/pollymarchant/?hl=en" target="_blank">@pollymarchant</a> using
-                    the <a href="{{store url=''}}beauty-works-professional-styler.html">Professional Styler</a> curling
-                    wand.</p>
+                <div class="card-body">
+                    <p class="card-text">Curls for day! Discover how to get long-lasting curls with <a
+                            href="https://www.instagram.com/pollymarchant/?hl=en" target="_blank"
+                            title="@pollymarchant on Instagram">@pollymarchant</a>
+                        using the <a href="{{store url=''}}beauty-works-professional-styler.html"
+                            title="Beauty Works Professional Styler">Professional Styler</a> curling wand.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col-md-6 col-xs-12">
-            <div class="cta-block">
-                <a href="https://www.youtube.com/watch?v=o9yJQsn9VN8" target="_blank">
-                    <img class="tutorialVid"
-                        src="{{media url='wysiwyg/styling-tools/beauty-works_the_pro_styler_tutorial.png'}}"
-                        alt="Amy Katrianne's tutorial for the Beauty Works Waver"
-                        title="Amy Katrianne's tutorial for the Beauty Works Waver" />
+            <div class="card">
+                <a href="https://www.youtube.com/watch?v=o9yJQsn9VN8" target="_blank"
+                    title="Amy Katrianne's tutorial for the Beauty Works Waver">
+                    <img src="{{media url='wysiwyg/styling-tools/beauty-works_the_pro_styler_tutorial.png'}}"
+                        class="card-img-top" loading="lazy" alt="Amy Katrianne's tutorial for the Beauty Works Waver"
+                        title="Amy Katrianne's tutorial for the Beauty Works Waver">
                 </a>
-                <script type="application/ld+json">
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "VideoObject",
-                        "name": "HOW TO GET SUMMER BEACH WAVES WITH EXTENSIONS!!",
-                        "description": "Amy Katrianne shows how to create textured, beach waves with The Waver",
-                        "thumbnailUrl": "http://i3.ytimg.com/vi/o9yJQsn9VN8/maxresdefault.jpg",
-                        "uploadDate": "2021-01-06",
-                        "contentUrl": "https://www.youtube.com/watch?v=o9yJQsn9VN8",
-                        "embedUrl": "https://youtu.be/o9yJQsn9VN8"
-                    }
-                </script>
-                <p>Want mermaid waves without the beach? Beauty blogger <a
-                        href="https://www.instagram.com/amykatrianne/?hl=en" target="_blank">@amykatrianne</a> shows how
-                    to create textured, beach waves with <a href="{{store url=''}}beauty-works-waver.html">The
-                        Waver</a>.</p>
+                <div class="card-body">
+                    <p class="card-text">Want mermaid waves without the beach? Beauty blogger <a
+                            href="https://www.instagram.com/amykatrianne/?hl=en" target="_blank"
+                            title="@amykatrianne on Instagram">@amykatrianne</a> shows how to create textured, beach
+                        waves with <a href="{{store url=''}}beauty-works-waver.html" title="Beauty Works Waver">The
+                            Waver
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="h2title">Awards</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="jumbotron-slick">
+                <div class="container">
+                    <div class="block widget block-carousel">
+                        <div class="block-content">
+                            <div class="slick-slider"
+                                data-mage-init='{"slick": {"slidesToShow": 6, "slidesToScroll": 1, "dots": false, "autoplay": true, "variableWidth": true, "swipeToSlide": true}}'>
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url=&quot;wysiwyg/awards/Cosmo_Beauty_Awards_2020_logo.png&quot;}}"
+                                    alt="Comopolitan Beauty Awards UK 2020 - Best Curling Tong - Beauty Works Flat Iron Wave Bar 25mm"
+                                    title="Comopolitan Beauty Awards UK 2020 - Best Curling Tong - Beauty Works Flat Iron Wave Bar 25mm" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url=&quot;wysiwyg/awards/Beauty_Awards_winner_logo_circle.png&quot;}}"
+                                    alt="Beauty Awards 2020 with ASOS - New Hair Styling Hero WINNER - Beauty Works X Molly-Mae Curl Kit"
+                                    title="Beauty Awards 2020 with ASOS - New Hair Styling Hero WINNER - Beauty Works X Molly-Mae Curl Kit" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url=&quot;wysiwyg/awards/Beauty_Awards_HIGHLY_COMMENDED_logo_circle.png&quot;}}"
+                                    alt="Beauty Awards 2020 with ASOS - Best Influencer Collaboration of the Year HIGHLY COMMENDED - Beauty Works X Molly-Mae Curl Kit"
+                                    title="Beauty Awards 2020 with ASOS - Best Influencer Collaboration of the Year HIGHLY COMMENDED - Beauty Works X Molly-Mae Curl Kit" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-beauty-awards-2016-finalist.png'}}"
+                                    alt="Beauty Awards 2016 Finalist" title="Beauty Awards 2016 Finalist" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-beauty-awards-with-ASOS-2019-winner.png'}}"
+                                    alt="Beauty Awards with ASOS 2019 Winner"
+                                    title="Beauty Awards with ASOS 2019 Winner" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2016-winner.png'}}"
+                                    alt="Hair Awards 2016 Winner" title="Hair Awards 2016 Winner" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2017-winner.png'}}"
+                                    alt="Hair Awards 2017 Winner" title="Hair Awards 2017 Winner" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2018-winner.png'}}"
+                                    alt="Hair Awards 2018 Winner" title="Hair Awards 2018 Winner" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-hair-awards-2019-winner.png'}}"
+                                    alt="Hair Awards 2019 Winner" title="Hair Awards 2019 Winner" />
+                                <img class="awardsImg" loading="lazy"
+                                    src="{{media url='wysiwyg/styling-tools/award-icons/beauty-works-styling-tools-marie-claire-award-2018.png'}}"
+                                    alt="Marie Claire Awards 2018" title="Marie Claire Awards 2018" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 a-center" style="padding: 3rem;">
+            <a class="card-btn" href="{{store url=''}}hair-extensions-awards">See More</a>
+        </div>
+    </div>
+
 </div>
 
-
 <style>
-    .breadcrumbs .items {
-        color: white;
-    }
-
-    .breadcrumbs a:visited {
-        color: white;
-    }
-
-    .catalog-category-view .page-main .category-view {
-        padding-top: 30px;
-    }
-
-    .slick-list {
-        margin: 0 30px;
-    }
-
-    #page-title-heading {
-        display: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .topSldr {
-        margin-bottom: 45px;
-    }
-
-    .swiper-container-horizontal>.swiper-pagination-bullets {
-        position: initial;
-    }
-
-    .swiper-pagination-bullet {
-        height: 15px;
-        width: 15px;
-        opacity: 1;
-        background: transparent;
-        border: solid #373737 1px;
-        margin: 25px 5px 0 !important;
-    }
-
-    .swiper-pagination-bullet-active {
-        background: #373737;
+    .col-md-4 .card-title {
+        height: 4rem;
     }
 
     .h2title {
@@ -290,52 +340,8 @@
         margin: 2rem auto;
     }
 
-    .cta-block {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .cta-block p {
-        margin-bottom: 2em;
-    }
-
-    .cta-title {
-        text-align: center;
-        font-weight: 800;
-        line-height: 1.1;
-        font-size: 1.6rem;
-        font-family: 'Muli', sans-serif;
-        font-style: normal;
-        text-transform: uppercase;
-        color: #373737;
-        padding-top: 15px;
-    }
-
-    .stylerName {
-        height: 3rem;
-    }
-
-    .cta-title::after {
-        background-color: transparent !important;
-        margin-top: 0px;
-    }
-
-    .cta-bttn {
-        background: #373737;
-        border: solid #373737 1px;
-        color: white !important;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    .cta-bttn:hover {
-        background: transparent;
-        color: #373737 !important;
-    }
-
     .block-carousel .block-content {
-        margin: 0 21rem;
+        margin: 0 18rem;
     }
 
     .awardsImg {
@@ -343,27 +349,14 @@
     }
 
     @media only screen and (max-width: 1024px) {
-        .stylerCopy {
-            height: 7rem;
-        }
-
-        .slick-list {
-            margin: 0 10px;
-        }
-
         .block-carousel .block-content {
             margin: 0 12rem;
-        }
-
-        .stylerName {
-            height: 4rem;
         }
     }
 
     @media only screen and (max-width: 800px) {
-
-        .topSldr {
-            margin-bottom: 20px;
+        .catalog-category-view .page-main .category-view {
+            padding-top: 185px;
         }
 
         .h2title {
@@ -371,48 +364,18 @@
             margin-top: 20px;
         }
 
-        .cta-block {
-            padding: 25px 5px;
-        }
-
-        .cta-title {
-            font-size: 1.2rem;
-        }
-
-        .stylerName {
-            height: 3rem;
-        }
-
-        .cta-block p {
-            font-size: 12px;
-        }
-
-        .cta-bttn {
-            font-size: 12px;
-            padding: 7px 20px
-        }
-
-        .slick-list {
-            margin: 0 30px;
-        }
-
         .awardsImg {
             width: 75px !important;
         }
-
     }
 
     @media only screen and (max-width: 600px) {
-        .slick-list {
-            margin: 0 20px;
+        .catalog-category-view .page-main .category-view {
+            padding-top: 10px;
         }
 
         .block-carousel .block-content {
             margin: auto;
-        }
-
-        .stylerCopy {
-            height: auto;
         }
     }
 
@@ -422,3 +385,26 @@
         }
     }
 </style>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Curl Hacks to try at home",
+        "description": "Polly Marchant shows us her top tips for the perfect curls using the Professional Styler, our award-winning extra long barrel curling wand",
+        "uploadDate": "2020-03-24",
+        "contentUrl": "https://www.instagram.com/tv/B-IOIg2FtXD/?hl=en",
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "HOW TO GET SUMMER BEACH WAVES WITH EXTENSIONS!!",
+        "description": "Amy Katrianne shows how to create textured, beach waves with The Waver",
+        "thumbnailUrl": "http://i3.ytimg.com/vi/o9yJQsn9VN8/maxresdefault.jpg",
+        "uploadDate": "2021-01-06",
+        "contentUrl": "https://www.youtube.com/watch?v=o9yJQsn9VN8",
+        "embedUrl": "https://youtu.be/o9yJQsn9VN8"
+    }
+</script>
