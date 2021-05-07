@@ -1,0 +1,133 @@
+<!-- CTA Block Styling -->
+<style>
+    .card {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card a {
+        text-decoration: none;
+    }
+
+    .card-title {
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 1.6rem;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #373737;
+        padding-top: 15px;
+        margin-bottom: 1rem;
+        height: 3rem;
+    }
+
+    .card-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .card-text {
+        margin-bottom: 2em !important;
+        color: #6d6d6d !important;
+    }
+
+    .card-btn {
+        background: #373737;
+        border: solid #373737 1px;
+        color: white !important;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .card-btn:hover {
+        background: transparent;
+        color: #373737 !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .catalog-category-view .page-main .category-view {
+            padding-top: 120px;
+        }
+
+        .card {
+            padding: 25px 5px;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            padding-top: 5px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-btn {
+            font-size: 12px;
+            padding: 7px 20px
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .catalog-category-view .page-main .category-view {
+            padding-top: 1rem;
+        }
+
+        .card-title {
+            height: 4rem;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .card-title {
+            height: 3.5rem;
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+<div class="container" style="display: flow-root;">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="card">
+                <a href="{{store url=''}}sale-offers/clip-in-offers.html"
+                    title="Beauty Works Outlet Store - Shop Clip-In Offers">
+                    <img src="{{media url='wysiwyg/haircare_2020/beauty_works_shop_by_concern.png'}}"
+                        class="card-img-top" loading="lazy" alt="Beauty Works Outlet Store - Shop Clip-In Offers"
+                        title="Beauty Works Outlet Store - Shop Clip-In Offers">
+                </a>
+                <div class="card-body">
+                    <a href="{{store url=''}}sale-offers/clip-in-offers.html"
+                        title="Beauty Works Outlet Store - Shop Clip-In Offers">
+                        <h5 class="card-title">Clip-In Offers</h5>
+                    </a>
+                    <a href="{{store url=''}}sale-offers/clip-in-offers.html" class="card-btn"
+                        title="Beauty Works Outlet Store - Shop Clip-In Offers">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="card">
+                <a href="{{store url=''}}sale-offers/professional-extension-offers.html"
+                    title="Beauty Works Outlet Store - Shop Professional Extension Offers">
+                    <img src="{{media url='wysiwyg/haircare_2020/beauty_works_shop_by_concern.png'}}"
+                        class="card-img-top" loading="lazy"
+                        alt="Beauty Works Outlet Store - Shop Professional Extension Offers"
+                        title="Beauty Works Outlet Store - Shop Professional Extension Offers">
+                </a>
+                <div class="card-body">
+                    <a href="{{store url=''}}sale-offers/professional-extension-offers.html"
+                        title="Beauty Works Outlet Store - Shop Professional Extension Offers">
+                        <h5 class="card-title">Professional Extension Offers</h5>
+                    </a>
+                    <a href="{{store url=''}}sale-offers/professional-extension-offers.html" class="card-btn"
+                        title="Beauty Works Outlet Store - Shop Professional Extension Offers">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
